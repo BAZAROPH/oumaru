@@ -1,0 +1,9 @@
+{% extends 'app.html' %}
+{% block title %} Page Introuvable {% endblock %}
+
+{% block content %}
+<script>
+    document.body.style = "";
+    document.querySelector('body').style = "background-image: url('../static/assets/img/404_image.png'); background-repeat: no-repeat; background-size: cover;";
+</script>
+{% endblock %}

@@ -1,0 +1,257 @@
+{% extends 'app.html' %}
+{% load static %}
+{% block title %} Nos services - Oumaru {% endblock %}
+
+{% block content %}
+<body class="about-us bg-gray-200">
+    <!-- -------- START HEADER 7 w/ text and video ------- -->
+    <header class="bg-gradient-dark animate__animated animate__fadeInDown">
+        <div class="page-header min-vh-75" style="background-image: url('../../static/assets/img/bgs.jpg');">
+            <span class="mask bg-gradient-dark opacity-6"></span>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center mx-auto my-auto">
+                        <h1 class="text-white ">Nos services sur mesure pour vos projets</h1>
+                        <p class="lead mb-3 text-white opacity-8">Notre agence met à votre disposition son expertise pour un résultat unique et des outils performants pour atteindre vos objectifs</p>
+                            <a href="{% url 'devis-home' %}">
+                                <button type="submit" class="btn bg-gradient-success text-white">Devis en ligne</button>
+                            </a>
+                        <h6 class="text-white mb-2 mt-3">Retrouvez nous sur</h6>
+                        <div class="d-flex justify-content-center">
+                            <a href="https://web.facebook.com/oumaruci" target="_blank">
+                                <i class="fab fa-facebook text-lg text-white me-4" target="_blank"></i>
+                            </a>
+                            <a href="https://www.instagram.com/oumaruci/" target="_blank">
+                                <i class="fab fa-instagram text-lg text-white me-4" ></i>
+                            </a>
+                            <a href="https://twitter.com/oumaruci" target="_blank">
+                                <i class="fab fa-twitter text-lg text-white me-4"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/oumaruci/" target="_blank">
+                                <i class="fab fa-linkedin text-lg text-white me-4"></i>
+                            </a>
+                            <a href="https://wa.me/2250141993677" target="_blank">
+                                <i class="fab fa-whatsapp text-lg text-white "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- -------- END HEADER 7 w/ text and video ------- -->
+
+    <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6 animate__animated animate__fadeInUp">
+        <section class="my-5 pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 m-auto">
+                        <h4>Conception de Site & Application Web</h4>
+                        <p class="mb-4">
+                            Vous souhaitez présenter vos produits et services à vos clients et développer votre image de marque ?
+                            Aujourd’hui l’évolution des habitudes de consommation a rendu le digital incontournable dans les parcours d’achat, 78% des clients ayant acheté en magasin s’étaient d’abord renseignés en ligne. C’est pourquoi il est primordial pour une entreprise d’être visible sur internet.
+                        </p>
+                        <div class="row">
+                            <div class="col-4 ps-0 ml-3 pb-3">
+                                <a href="{% url 'devis-home' %}">
+                                    <button type="button" class="btn bg-gradient-warning mb-0 h-100 position-relative z-index-2">
+                                        Devis
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 ms-auto">
+                        <div class="position-relative">
+                            <img class="max-width-50 w-100 position-relative z-index-2" src="../../static/assets/img/ordiblanc.jpg" style="border-radius: 15px;" alt="image" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5 pt-3">
+                    <div class="col-md-5 ms-auto">
+                        <div class="position-relative">
+                            <img class="max-width-50 w-100 position-relative z-index-2" src="../../static/assets/img/tastyfood.jpg" style="border-radius: 15px;" alt="image" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 m-auto">
+                        <h4>Conception de Logo</h4>
+                        <p class="mb-4">
+                            Votre logo étant la représentation visuelle de votre marque il est important de bien le choisir et surtout d’apprendre à le faire évoluer pour qu’il reste actuel et ne renvoie pas une image vieillissante de votre entreprise.<br>
+                            Nos graphistes vous aident également à redéfinir votre identité visuelle pour répondre à vos objectifs d’image.
+                            Ils revisitent votre logo en respectant votre charte graphique et en la modernisant.
+                        </p>
+                        <div class="row">
+                            <div class="col-4 ps-0 ml-3">
+                                <a href="{% url 'devis-home' %}">
+                                    <button type="button" class="btn bg-gradient-warning mb-0 h-100 position-relative z-index-2">
+                                        Devis
+                                    </button>
+                                </a>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5 pt-3">
+                    <div class="col-md-6 m-auto">
+                        <h4>Conception numérique d'Affiches et de Créas</h4>
+                        <p class="mb-4">
+                            L’expérience utilisateur est aujourd’hui le maître-mot de la fidélisation client et l’aspect visuel d’un produit ou d'une entreprise constitue un élément clé de cette expérience. La convivialité de vos pages rentre également en compte dans votre référencement, c’est pourquoi les graphismes de votre site ou de vos pages sont un critère à ne pas négliger.<br>
+                            Nos webdesigners élaborent pour vous des designs qui rendront votre site internet unique et qui reflèteront l’identité de votre marque.
+                        </p>
+                        <div class="row">
+                            <div class="col-4 ps-0 ml-3 pb-3">
+                                <a href="{% url 'devis-home' %}">
+                                    <button type="button" class="btn bg-gradient-warning mb-0 h-100 position-relative z-index-2">
+                                        Devis
+                                    </button>
+                                </a>                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 ms-auto">
+                        <div class="position-relative">
+                            <img class="max-width-50 w-100 position-relative z-index-2" src="../../static/assets/img/creas.jpg" style="border-radius: 15px;" alt="image" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5 pt-3">
+                    <div class="col-md-5 ms-auto">
+                        <div class="position-relative">
+                            <img class="max-width-50 w-100 position-relative z-index-2" src="../../static/assets/img/mobileapp.jpg" style="border-radius: 15px;" alt="image" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 m-auto">
+                        <h4>Conception d'Application Mobile</h4>
+                        <p class="mb-4">
+                            Avoir une application, bien que cela devienne de plus en plus fréquent, fait de votre l’entreprise ou de votre marque un acteur moderne et proche de son consommateur. Le lancement d’une application mobile fait davantage parler de votre marque que le lancement d’un nouveau site. Cela est d’autant plus vrai, si cette dernière est innovante et utilise les objets connectés par exemple.
+                        </p>
+                        <div class="row">
+                            <div class="col-4 ps-0 ml-3">
+                                <a href="{% url 'devis-home' %}">
+                                    <button type="button" class="btn bg-gradient-warning mb-0 h-100 position-relative z-index-2">
+                                        Devis
+                                    </button>
+                                </a>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5 pt-3">
+                    <div class="col-md-6 m-auto">
+                        <h4>Communication Digitale</h4>
+                        <p class="mb-4">
+                            Nous pensons qu'au-delà d'un produit ou d'un service, la force de votre marque réside dans son utilité concrète. Pour exister et toucher son public il est désormais nécessaire de s'inscrire dans une démarche sincère qui vous ressemble. C'est pourquoi chez Oumaru, nous écrivons des histoires qui ambitionnent de vous faire résonner dans le ❤️ de vos cibles. 
+                        </p>
+                        <div class="row">
+                            <div class="col-4 ps-0 ml-3 pb-3">
+                                <a href="{% url 'devis-home' %}">
+                                    <button type="button" class="btn bg-gradient-warning mb-0 h-100 position-relative z-index-2">
+                                        Devis
+                                    </button>
+                                </a>                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 ms-auto">
+                        <div class="position-relative">
+                            <img class="max-width-50 w-100 position-relative z-index-2" src="../../static/assets/img/cd.jpg" style="border-radius: 15px;" alt="image" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- -------- END PRE-FOOTER 1 w/ SUBSCRIBE BUTTON AND IMAGE ------- -->
+    </div>
+    <script>
+        // get the element to animate
+        var element = document.getElementById("count-stats");
+        var elementHeight = element.clientHeight;
+
+        // listen for scroll event and call animate function
+
+        document.addEventListener("scroll", animate);
+
+        // check if element is in view
+        function inView() {
+            // get window height
+            var windowHeight = window.innerHeight;
+            // get number of pixels that the document is scrolled
+            var scrollY = window.scrollY || window.pageYOffset;
+            // get current scroll position (distance from the top of the page to the bottom of the current viewport)
+            var scrollPosition = scrollY + windowHeight;
+            // get element position (distance from the top of the page to the bottom of the element)
+            var elementPosition = element.getBoundingClientRect().top + scrollY + elementHeight;
+
+            // is scroll position greater than element position? (is element in view?)
+            if (scrollPosition > elementPosition) {
+                return true;
+            }
+
+            return false;
+        }
+
+        var animateComplete = true;
+        // animate element when it is in view
+        function animate() {
+            // is element in view?
+            if (inView()) {
+                if (animateComplete) {
+                    if (document.getElementById("state1")) {
+                        const countUp = new CountUp("state1", document.getElementById("state1").getAttribute("countTo"));
+                        if (!countUp.error) {
+                            countUp.start();
+                        } else {
+                            console.error(countUp.error);
+                        }
+                    }
+                    if (document.getElementById("state2")) {
+                        const countUp1 = new CountUp("state2", document.getElementById("state2").getAttribute("countTo"));
+                        if (!countUp1.error) {
+                            countUp1.start();
+                        } else {
+                            console.error(countUp1.error);
+                        }
+                    }
+                    if (document.getElementById("state3")) {
+                        const countUp2 = new CountUp("state3", document.getElementById("state3").getAttribute("countTo"));
+                        if (!countUp2.error) {
+                            countUp2.start();
+                        } else {
+                            console.error(countUp2.error);
+                        }
+                    }
+                    animateComplete = false;
+                }
+            }
+        }
+
+        if (document.getElementById("typed")) {
+            var typed = new Typed("#typed", {
+                stringsElement: "#typed-strings",
+                typeSpeed: 90,
+                backSpeed: 90,
+                backDelay: 200,
+                startDelay: 500,
+                loop: true,
+            });
+        }
+    </script>
+    <script>
+        if (document.getElementsByClassName("page-header")) {
+            window.onscroll = debounce(function () {
+                var scrollPosition = window.pageYOffset;
+                var bgParallax = document.querySelector(".page-header");
+                var oVal = window.scrollY / 3;
+                bgParallax.style.transform = "translate3d(0," + oVal + "px,0)";
+            }, 6);
+        }
+    </script>
+</body>
+{% endblock %}

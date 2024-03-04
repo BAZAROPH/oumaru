@@ -1,0 +1,273 @@
+{% extends 'app.html' %}
+{% block title %} Contact - Oumaru {% endblock %}
+
+{% block content %}
+<body class="contact-us">
+    <div class="row fixed-top">
+        <div id="toast" class="col-12 bg-success animate__animated fixed-top py-3 text-white displayNoneToast font-weight-bold text-center ubuntu">
+            Votre message été envoyé avec succès !
+        </div>
+    </div>
+    
+    <!-- <section class="mt-5 p-3">
+        <div class="page-header min-vh-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 start-0 text-center justify-content-center flex-column">
+                        <div
+                            class="position-relative h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center"
+                            style="background-image: url('../../static/assets/img/illustrations/illustration-signin.jpg'); background-size: cover;"
+                            loading="lazy"
+                        ></div>
+                    </div>
+                    <div class="col-xl-5 col-lg-6 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-5 animate__animated animate__backInRight">
+                        <div class="card d-flex blur justify-content-center shadow-lg my-sm-0 my-sm-6 mt-8 mb-5">
+                            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
+                                <div class="bg-gradient-primary shadow-primary border-radius-lg p-3">
+                                    <h3 class="text-white mb-0">Contactez nous</h3>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="pb-3">
+                                    Pour toute autre question, y compris les possibilités de partenariat, veuillez envoyer un courriel à <span class="text-gray">info@oumaru.com</span> ou utiliser notre formulaire de contact.
+                                </p>
+                                <form id="contact-form" method="post" autocomplete="off">
+                                    <div class="card-body p-0 my-3">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="input-group input-group-static mb-4">
+                                                    <label class="obligatory">Nom Complet</label>
+                                                    <input type="email" class="form-control" placeholder="Veuillez entrer votre nom complet" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 ps-md-2">
+                                                <div class="input-group input-group-static mb-4">
+                                                    <label class="obligatory">Email</label>
+                                                    <input type="email" class="form-control" placeholder="veuillez entrer votre email" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group mb-0 mt-md-0 mt-4">
+                                            <div class="input-group input-group-static mb-4">
+                                                <label>Comment pouvons-nous vous aider ?</label>
+                                                <textarea name="message" class="form-control" id="message" rows="6" placeholder="Décrivez votre problème en moins 250 caractères.
+                                                "></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 text-center">
+                                                <button type="submit" class="btn bg-gradient-primary mt-3 mb-0">Envoyer</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section class="py-lg-5">
+        <div class="container animate__animated animate__zoomInRight">
+          <div class="row">
+            <div class="col">
+              <div class="card box-shadow-xl overflow-hidden mb-5">
+                <div class="row">
+                  <div class="col-lg-5 position-relative bg-cover px-0" style="background-image: url('../../static/assets/img/illustrations/illustration-signin.jpg')" loading="lazy">
+                    <div class="z-index-2 text-center d-flex h-100 w-100 d-flex m-auto justify-content-center">
+                      <div class="mask bg-gradient-dark opacity-8"></div>
+                      <div class="p-5 ps-sm-8 position-relative text-start my-auto z-index-2">
+                        <h3 class="text-white">Contact & Information</h3>
+                        <p class="text-white opacity-8 mb-4"> Pour toute autre question, y compris les possibilités de partenariat, veuillez envoyer un courriel.</p>
+                        <div class="d-flex p-2 text-white">
+                          <div>
+                            <i class="fas fa-phone text-sm"></i>
+                          </div>
+                          <div class="ps-3">
+                            <span class="text-sm opacity-8">(+225) 01 41 993 677</span>
+                          </div>
+                        </div>
+                        <div class="d-flex p-2 text-white">
+                          <div>
+                            <i class="fas fa-envelope text-sm"></i>
+                          </div>
+                          <div class="ps-3">
+                            <span class="text-sm opacity-8">info@oumaru.com</span>
+                          </div>
+                        </div>
+                        <div class="d-flex p-2 text-white">
+                          <div>
+                            <i class="fas fa-map-marker-alt text-sm"></i>
+                          </div>
+                          <div class="ps-3">
+                            <span class="text-sm opacity-8">Abidjan, Côte d'Ivoire</span>
+                          </div>
+                        </div>
+                        <div class="mt-4">
+                            <a href="https://web.facebook.com/oumaruci" target="_blank">
+                                <button type="button" class="btn btn-icon-only btn-link text-white btn-lg mb-0" data-toggle="tooltip" data-placement="bottom" data-original-title="Log in with Facebook">
+                                  <i class="fab fa-facebook"></i>
+                                </button>
+                            </a>
+                            <a href="https://twitter.com/oumaruci" target="_blank">
+                                <button type="button" class="btn btn-icon-only btn-link text-white btn-lg mb-0" data-toggle="tooltip" data-placement="bottom" data-original-title="Log in with Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+                            </a>
+                            <a href="https://wa.me/2250141993677" target="_blank">
+                                <button type="button" class="btn btn-icon-only btn-link text-white btn-lg mb-0" data-toggle="tooltip" data-placement="bottom" data-original-title="Log in with Dribbble">
+                                  <i class="fab fa-whatsapp"></i>
+                                </button>
+                            </a>
+                            <a href="https://www.linkedin.com/company/oumaruci/" target="_blank">
+                                <button type="button" class="btn btn-icon-only btn-link text-white btn-lg mb-0" data-toggle="tooltip" data-placement="bottom" data-original-title="Log in with Linkedin">
+                                    <i class="fab fa-linkedin"></i>
+                                </button>
+                            </a>
+                            <a href="https://www.instagram.com/oumaruci/">
+                                <button type="button" class="btn btn-icon-only btn-link text-white btn-lg mb-0" data-toggle="tooltip" data-placement="bottom" data-original-title="Log in with Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </button>
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-7">
+                    <form class="p-3" id="contact-form" method="post">
+                      <div class="card-header px-4 py-sm-5 py-3">
+                        <h2>Dites Bonjour !</h2>
+                        <p class="lead ubuntu"> Nous aimerions parler avec vous.</p>
+                      </div>
+                      <div class="card-body pt-1">
+                        <div class="row">
+                          <div class="col-md-12 pe-2 mb-3">
+                            <div class="input-group input-group-static mb-4">
+                              <label>Mon nom est</label>
+                              <input id="fullName" type="text" class="form-control" placeholder="Nom complet">
+                              <small class="text-danger" id="fullNameError" style="display: none;"> Vous devez entrer votre nom complet</small>
+                            </div>
+                          </div>
+                          <div class="col-md-12 pe-2 mb-3">
+                            <div class="input-group input-group-static mb-4">
+                              <label>Mon email est</label>
+                              <input id="email" type="text" class="form-control" placeholder="eg. moi@oumaru.com">
+                              <small class="text-danger" id="emailError" style="display: none;"> Vous devez entrer un email </small>
+                            </div>
+                          </div>
+                          <div class="col-md-12 pe-2 mb-3">
+                            <div class="input-group input-group-static mb-4">
+                              <label>Mon message</label>
+                              <textarea name="message" class="form-control" id="message" rows="6" placeholder="Je voudrai vous dire que..."></textarea>
+                              <small class="text-danger" id="messageError" style="display: none;"> Vous devez entrer votre message </small>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 text-end ms-auto">
+                            <button id="sendMessage" type="submit" class="btn bg-gradient-primary mb-0">Envoyer</button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"
+            integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    ></script>
+    <script>
+        function validateEmail(email) {
+            var expr = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+            return expr.test(email);
+        }
+        function validator(){
+
+            let fullName = document.getElementById('fullName').value;
+            let message = document.getElementById('message').value;
+            let email = document.getElementById('email').value;
+            let emailValide = true;
+            let fullNameValide = true;
+            let messageValide = true;
+
+            if(email === '' || !validateEmail(email)){
+                document.getElementById('emailError').style.display = 'block';
+                emailValide = false
+            }else{
+                document.getElementById('emailError').style.display = 'none';
+                emailValide = true;
+            }
+
+            if(fullName === ''){
+                document.getElementById('fullNameError').style.display = 'block';
+                fullNameValide = false;
+            }else{
+                document.getElementById('fullNameError').style.display = 'none';
+                fullNameValide = true;
+            }
+
+            if(message === ''){
+                document.getElementById('messageError').style.display = 'block';
+                messageValide = false;
+            }else{
+                document.getElementById('messageError').style.display = 'none';
+                messageValide = true;
+            }
+            
+            if(!emailValide || !fullNameValide || !messageValide){
+                return true;
+            }
+            return false;
+        }
+
+        let sendMessage = document.getElementById('sendMessage');
+        sendMessage.addEventListener('click', (e) => {
+            e.preventDefault();
+            if(validator()){
+
+            }else{
+                const data = {
+                    'full_name': document.getElementById('fullName').value,
+                    'message': document.getElementById('message').value,
+                    'email': document.getElementById('email').value
+                }
+                sendMessage.innerHTML = '<div class="spinner-border" role="status"><span class="sr-only"></span></div>';
+                sendMessage.classList.add("px-5", "py-1");
+                sendMessage.disabled = true;
+                axios.post('https://oumaru.com/api/send-contact-us-mail', data).then((response)=>{
+                    document.getElementById('fullName').value = '';
+                    document.getElementById('message').value = '';
+                    document.getElementById('email').value = '';
+                    sendMessage.classList.remove("px-5", "py-1");
+                    sendMessage.innerHTML = '';
+                    sendMessage.textContent = 'Envoyer';
+                    sendMessage.disabled = false;
+                    
+                    let toast = document.getElementById("toast");
+                    //display
+                    toast.classList.remove("displayNoneToast");
+                    setTimeout(() => {
+                        //hide
+                        // toast.classList.add('displayNoneToast');
+                        toast.style.transition = "opacity " + 4 + "s";
+                        toast.style.opacity = 0;
+                    }, 2500);
+                    setTimeout(() => {
+                        //hide
+                        // toast.classList.add('displayNoneToast');
+                        toast.style.display = 'none';
+                    }, 5000);
+                })
+            };
+        })
+    </script>    
+</body>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'app.html' %}
+{% load static %}
+{% block title %} Erreur de Serveur {% endblock %}
+
+{% block content %}
+<script>
+    document.body.style = "";
+    document.querySelector('body').style = "background-image: url('../static/assets/img/500_image.png'); background-repeat: no-repeat; background-size: cover;";
+</script>
+{% endblock %}

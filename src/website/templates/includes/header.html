@@ -1,0 +1,82 @@
+{% load static %}
+<div id="fixeur" class="container position-sticky z-index-sticky top-0 animate__animated animate__bounce">
+    <div class="row">
+        <div class="col-12">
+            <nav id="navbarc" class="navbar navbar-expand-lg blur border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
+                <div class="container-fluid px-0">
+                    <a class="navbar-brand font-weight-bolder ms-sm-3" href="{% url 'home' %}" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom">
+                        <img src="{% static 'assets/img/logoo.png' %}" height="30" alt="">
+                    </a>
+                    <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon  mt-2">
+                            <span id="trait1" class="navbar-toggler-bar bar1"></span>
+                            <span  id="trait2" class="navbar-toggler-bar bar2"></span>
+                            <span id="trait3" class="navbar-toggler-bar bar3"></span>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0 w-100" id="navigation">
+                        <ul class="navbar-nav navbar-nav-hover ms-auto">
+                            <li id="navlink" class="nav-item dropdown dropdown-hover mx-2">
+                                <a id="accueil" class="nav-link ps-2 d-flex cursor-pointer ubuntu align-items-center" id="dropdownMenuPages" href="{% url 'home' %}">
+                                    Accueil
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown dropdown-hover mx-2">
+                                <a id="oumaru" class="nav-link ps-2 d-flex cursor-pointer ubuntu align-items-center" id="dropdownMenuBlocks" href="{% url 'about-us' %}">
+                                    Oumaru
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown dropdown-hover mx-2">
+                                <a id="services" href="{% url 'services' %}" class="nav-link ps-2 d-flex cursor-pointer ubuntu align-items-center" id="dropdownMenuDocs">
+                                    Services
+                                </a>
+                            </li>
+                            <li class="nav-item ms-lg-auto">
+                                <a id class="nav-link nav-link-icon me-2" href="https://github.com/oumaruGitHub" target="_blank">
+                                    <i class="fa fa-github me-1 text-black"></i>
+                                    <p class="d-inline text-sm z-index-1 ubuntu font-weight-bold text-black" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Codes Libres">Github</p>
+                                </a>
+                            </li>
+                            <li id="contact" class="nav-item my-auto ms-3 ms-lg-0">
+                                <a href="{% url 'contact-us' %}" class="btn btn-sm bg-gradient-primary mb-0 me-1 mt-2 ubuntu mt-md-0">Nous Contacter</a>
+                            </li>
+                            <li id="devis" class="nav-item my-auto ms-3 ms-lg-0" style="display: none;">
+                                <a href="{% url 'devis-home' %}" class="btn btn-sm bg-gradient-success mb-0 me-1 mt-2 ubuntu mt-md-0">Devis en ligne</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+        </div>
+    </div>
+</div>
+<script>
+    let link = document.location.href;
+    if (link.indexOf('contact-us') > -1){
+        document.getElementById('contact').style.display = 'none';
+        document.getElementById('devis').style.display = 'block';
+    }else{
+        document.getElementById('contact').style.display = 'block';
+        document.getElementById('devis').style.display = 'none';
+    }
+    if (link.indexOf('about-us') > -1){
+        document.getElementById('oumaru').classList.add("active")
+    }else if(link.indexOf('services') > -1){
+        document.getElementById('services').classList.add("active")
+    }else{
+        document.getElementById('accueil').classList.add("active")
+    }
+    // if (link.indexOf('about-us') > -1){
+    //     document.getElementById('navbarc').classList.remove('blur', 'shadow') ;
+    //     document.getElementById('navbarc').classList.add('text-white','shadow-none','navbar-transparent') ;
+    //     document.getElementById('trait1').classList.add('bg-primary') ;
+    //     document.getElementById('trait2').classList.add('bg-primary') ;
+    //     document.getElementById('trait3').classList.add('bg-primary') ;
+    //     // document.getElementById('navlink').style.color='#d58a24';
+    // }else{
+    //     document.getElementById('navbarc').class = 'navbar navbar-expand-lg blur border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4';
+    // }
+</script>
